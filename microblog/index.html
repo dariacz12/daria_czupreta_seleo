@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Microblog creator</title>
+    <meta name="description" content="Our first page" />
+    <meta name="keywords" content="html tutorial template" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,700;0,900;1,400&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="main.css" />
+    <script src="main.js" defer></script>
+  </head>
+  <body>
+    <main class="app">
+      <section class="header">
+        <h2 class="title">Create your Microblog</h2>
+      </section>
+      <section class="create-post">
+        <h3>CREATE A POST</h3>
+        <form id="new-post-form">
+          <h4>The title of the post</h4>
+          <input
+            type="text"
+            name="title"
+            id="title"
+            placeholder="e.g. Important JavaScript Topics"
+          />
+          <h4>The author of the post</h4>
+          <input
+            type="text"
+            name="author"
+            id="autor"
+            placeholder="e.g. Kate Tamra"
+          />
+          <h4>The main content</h4>
+          <input
+            type="text"
+            name="content"
+            id="content"
+            placeholder="e.g. Learn how to work with JavaScript's functions to ..."
+          />
+          <input type="submit" value="Add post" />
+        </form>
+      </section>
+      <section class="posts-list">
+        <h3>POSTS LIST</h3>
+        <div class="list" id="posts-list"></div>
+        <div>
+          COUNT OF POSTS: <span class="countOfPosts" id="countOfPosts">0</span>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>

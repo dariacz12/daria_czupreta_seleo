@@ -1,0 +1,138 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "montserrat", sans-serif;
+}
+:root {
+  --primary: #ea40a4;
+  --light: #eee;
+  --dark: #313154;
+  --danger: #ff5b57;
+  --grey: #888;
+  --shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+.app {
+  width: 45rem;
+  margin: auto;
+}
+input,
+button {
+  appearance: none;
+  border: none;
+  outline: none;
+  background: none;
+  cursor: initial;
+}
+body {
+  background: var(--light);
+  color: var(--dark);
+}
+section {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+}
+h3 {
+  color: var(--dark);
+  font-size: 1rem;
+  font-weight: 400;
+  margin-bottom: 0.5rem;
+}
+h4 {
+  color: var(--grey);
+  font-size: 0.875rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+.header .title {
+  color: var(--dark);
+  font-size: 1.5rem;
+  font-weight: 700;
+  text-align: center;
+}
+.create-post input[type="text"] {
+  display: block;
+  width: 100%;
+  font-size: 1.125rem;
+  padding: 1rem 1.5rem;
+  color: var(--dark);
+  background-color: #fff;
+  border-radius: 0.5rem;
+  box-shadow: var(--shadow);
+  margin-bottom: 1.5rem;
+}
+.create-post input[type="submit"] {
+  display: block;
+  width: 100%;
+  font-size: 1.125rem;
+  padding: 1rem 1.5rem;
+  color: #fff;
+  background-color: var(--primary);
+  border-radius: 0.5rem;
+  box-shadow: var(--primary);
+  cursor: pointer;
+  transition: 0.2s ease-in-out;
+}
+.create-post input[type="submit"]:hover {
+  opacity: 0.75;
+}
+.posts-list {
+  margin-top: 4rem;
+}
+.posts-list .list {
+  margin: 1rem 0;
+}
+.posts-list .post-item {
+  display: flex;
+  justify-content: space-around;
+  background-color: #fff;
+  padding: 1.5rem;
+  border-radius: 0.5rem;
+  box-shadow: var(--shadow);
+  margin-bottom: 1rem;
+}
+.post-item .post-content {
+  flex: 1 1 0%;
+  display: block;
+  padding: 0.5rem 2rem 0.5rem 0.5rem;
+  line-height: 1.5rem;
+}
+
+.title {
+  color: var(--dark);
+  font-size: 1.125rem;
+  font-weight: 600;
+}
+.author {
+  color: var(--grey);
+  font-size: 0.725rem;
+}
+.content {
+  line-height: 1.3rem;
+  font-size: 1rem;
+  text-align: justify;
+}
+.post-item .actions button {
+  display: block;
+  padding: 0.5rem;
+  border-radius: 0.25rem;
+  color: #fff;
+  cursor: pointer;
+  transition: 0.2s ease-in-out;
+  margin: 1rem 0.5rem;
+  background-color: var(--primary);
+  height: 2rem;
+  width: 4rem;
+}
+.post-item .actions button:hover {
+  opacity: 0.75;
+}
+.post-item .actions .delete {
+  background-color: var(--danger);
+}
+.post-item .actions .dislike,
+.post-item .actions .like {
+  background-color: var(--dark);
+}
