@@ -1,0 +1,126 @@
+* {
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "montserrat", sans-serif;
+}
+:root {
+  --primary: #ea40a4;
+  --light: #eee;
+  --dark: #313154;
+  --grey: #888;
+  --shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+.app {
+  display: flex;
+  flex-direction: column;
+  width: auto;
+  margin: auto;
+}
+input,
+button {
+  appearance: none;
+  border: none;
+  outline: none;
+  background: none;
+  cursor: initial;
+}
+body {
+  background: var(--light);
+  color: var(--dark);
+}
+section {
+  margin: 2rem;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+}
+.header {
+  width: auto;
+  margin: auto;
+}
+#main {
+  width: auto;
+  margin: auto;
+}
+.header .title {
+  color: var(--dark);
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+input[type="text"] {
+  display: inline;
+  width: 20rem;
+  font-size: 1.125rem;
+  padding: 1rem;
+  color: var(--dark);
+  background-color: #fff;
+  border-radius: 0.5rem 0rem 0rem 0.5rem;
+  box-shadow: var(--shadow);
+}
+.results ul {
+  display: block;
+  width: 20rem;
+  font-size: 1.125rem;
+  padding: 1.5rem;
+  color: var(--dark);
+  background-color: #fff;
+  border-radius: 0rem 0rem 0.5rem 0.5rem;
+  box-shadow: var(--shadow);
+  margin-bottom: 1.5rem;
+  bottom: 1.3rem;
+  position: relative;
+}
+.results ul li {
+  width: 20rem;
+  list-style-type: none;
+}
+input[type="submit"] {
+  display: inline;
+  font-size: 1.125rem;
+  padding: 1rem 1.5rem;
+  color: #fff;
+  background-color: var(--primary);
+  border-radius: 0rem 0.5rem 0.5rem 0rem;
+  box-shadow: var(--primary);
+  cursor: pointer;
+  transition: 0.2s ease-in-out;
+}
+input[type="submit"]:hover {
+  opacity: 0.75;
+}
+li:hover {
+  cursor: pointer;
+  color: #676767;
+}
+#inputs {
+  display: flex;
+  align-items: center;
+}
+.title {
+  color: var(--dark);
+  font-size: 1.125rem;
+  font-weight: 600;
+}
+.show {
+  visibility: hidden;
+}
+.post-item .actions button {
+  display: block;
+  padding: 0.5rem;
+  border-radius: 0.25rem;
+  color: #fff;
+  cursor: pointer;
+  transition: 0.2s ease-in-out;
+  margin: 1rem 0.5rem;
+  background-color: var(--primary);
+  height: 2rem;
+  width: 4rem;
+}
+.post-item .actions button:hover {
+  opacity: 0.75;
+}
+.post-item .actions .delete {
+  background-color: var(--danger);
+}
+input[type="text"].green {
+  color: green;
+}
